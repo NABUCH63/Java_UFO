@@ -26,45 +26,21 @@ function buildTable(data) {
 function handleClick() {
     // Grab the datetime value from the filter
     let date = d3.select("#datetime").property("value");
+    let city = d3.select("#city").property("value");
     let state = d3.select("#state").property("value");
     let country = d3.select("#country").property("value");
     let shape = d3.select("#shape").property("value");
 
-    state =  state.toLowerCase();
+    city = city.toLowerCase();
+    state = state.toLowerCase();
     country = country.toLowerCase();
     shape = shape.toLowerCase();
 
     let filteredData = tableData;
   
-//      // Check to see if a date was entered and filter the
-//     // data using that date.
-//     if (date) {
-//       // Apply `filter` to the table data to only keep the
-//       // rows where the `datetime` value matches the filter value
-//       filteredData = filteredData.filter(row => row.datetime === date);
-//     }
-//     if (state) {
-//         // Apply `filter` to the table data to only keep the
-//         // rows where the `datetime` value matches the filter value
-//         filteredData = filteredData.filter(row => row.state === state);
-//     }
-//     if (country) {
-//     // Apply `filter` to the table data to only keep the
-//     // rows where the `datetime` value matches the filter value
-//     filteredData = filteredData.filter(row => row.country === country);
-//     }
-//     if (shape) {
-//     // Apply `filter` to the table data to only keep the
-//     // rows where the `datetime` value matches the filter value
-//     filteredData = filteredData.filter(row => row.shape === shape);
-//     }
-//      // Rebuild the table using the filtered data
-//     // @NOTE: If no date was entered, then filteredData will
-//     // just be the original tableData.
-//     buildTable(filteredData);
-// }
     var filters = {};
     filters["datetime"] = date;
+    filters["city"] = city;
     filters["state"] = state;
     filters["country"] = country;
     filters["shape"] = shape;
@@ -77,7 +53,6 @@ function handleClick() {
             request_filters.push([key, filters[key]])
         };
     }
-    console.log(filteredData[0][request_filters[0][0]]);
 
     if (request_filters.length==1) {
         search_results = filteredData.filter(i => i[request_filters[0][0]]==request_filters[0][1]);
@@ -88,8 +63,11 @@ function handleClick() {
     } else if (request_filters.length==3) {
         search_results = filteredData.filter(i => (i[request_filters[0][0]]==request_filters[0][1] && i[request_filters[1][0]]===request_filters[1][1] && i[request_filters[2][0]]===request_filters[2][1]))
         console.log(search_results)
-    } else {
+    } else if (request_filters.length==4) {
         search_results = filteredData.filter(i => (i[request_filters[0][0]]==request_filters[0][1] && i[request_filters[1][0]]===request_filters[1][1] && i[request_filters[2][0]]===request_filters[2][1] && i[request_filters[3][0]]===request_filters[3][1]))
+        console.log(search_results)
+    } else {
+        search_results = filteredData.filter(i => (i[request_filters[0][0]]==request_filters[0][1] && i[request_filters[1][0]]===request_filters[1][1] && i[request_filters[2][0]]===request_filters[2][1] && i[request_filters[3][0]]===request_filters[3][1] && i[request_filters[4][0]]===request_filters[4][1]))
         console.log(search_results)
     }
 

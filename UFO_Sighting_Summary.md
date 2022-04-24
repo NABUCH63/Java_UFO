@@ -3,7 +3,7 @@
 ## Background
 ----------------
 
-The goal of this analysis was to create an interactive webpage that allows one or more of four designated search criteria to filter through UFO sightings data. The filters can be input directly on the active webpage, which are then used to re-filter the data based on those criteria provided. THe output data is displayed on the webpage in a table format.
+The goal of this analysis was to create an interactive webpage that allows one or more of five designated search criteria to filter through UFO sightings data. The filters can be input directly on the active webpage, which are then used to re-filter the data based on those criteria provided. The output data is displayed on the webpage in a table format.
 
 ## Results
 -----------------
@@ -11,7 +11,7 @@ The goal of this analysis was to create an interactive webpage that allows one o
 ### **Input of Search Criteria**
 
 
-The desired search criteria can be input on the webpage in any of four input boxes located on the bottom left. Once the data has been input, and is correctly input to match the formatting in the table, click the "Filter Table" button to initiate the search.
+The desired search criteria can be input on the webpage in any of five input boxes located on the bottom left. Once the data has been input, and is correctly input to match the formatting in the table, click the "Filter Table" button to initiate the search.
 
 ![Webpage search input](/Pictures/Webpage_Search.png)
 
@@ -24,7 +24,7 @@ Resetting the page is simply a click in the upper left corner of the screen on t
 ## Summary
 ___________________
 
-This webpage allows for the search of any UFO sightings within the provided dataset based on four specific search criteria.
+This webpage allows for the search of any UFO sightings within the provided dataset based on five specific search criteria.
 
 One drawback of this webpage is the lack of summary statistics that could guide a user to know what searches to make. As the webpage is currently, one would need to scroll through the initial table to determine what criteria they can input. 
 
