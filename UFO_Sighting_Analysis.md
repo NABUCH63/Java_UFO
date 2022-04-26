@@ -11,7 +11,7 @@ The goal of this analysis was to create an interactive webpage that allows one o
 ### **Input of Search Criteria**
 
 
-The desired search criteria can be input on the webpage in any of five input boxes located on the bottom left. Once the data has been input, and is correctly input to match the formatting in the table, click the "Filter Table" button to initiate the search.
+The desired search criteria can be input on the webpage in any of five input boxes located on the bottom left. Any search input is automatically used to filter the data without having to initiate a search. 
 
 ![Webpage search input](/Pictures/Webpage_Search.png)
 

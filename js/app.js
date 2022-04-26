@@ -75,7 +75,12 @@ function handleClick() {
 };
 
   // Attach an event to listen for the form button
-d3.selectAll("#filter-btn").on("click", handleClick);
+d3.selectAll("#datetime").on("input", handleClick);
+d3.selectAll("#city").on("input", handleClick);
+d3.selectAll("#state").on("input", handleClick);
+d3.selectAll("#country").on("input", handleClick);
+d3.selectAll("#shape").on("input", handleClick);
+
   
   // Build the table when the page loads
 buildTable(tableData);

@@ -5,3 +5,6 @@ Initital commit of the repository with the index.HTML, static and JS subfolders,
 
 * 24APR2022
 Second cimmit to update search code to take a fifth criteria "City". Updated Summary and README to reflect changes.
+
+* 25APR2022 
+Third commit, updated code to automatically search for any input criteria without a button click. Renamed analysis summary to be clearer to grade/easier to identify.
